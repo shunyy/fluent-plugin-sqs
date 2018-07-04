@@ -98,7 +98,7 @@ module Fluent
     end
 
     def generate_id
-      unique_val = ((('a'..'z').to_a + (0..9).to_a)*3).shuffle[0, 100].join
+      unique_val = ((('a'..'z').to_a + (0..9).to_a)*3).shuffle[0, 50].join
       @tag_property_name + Time.now.to_i.to_s + unique_val
     end
   end
